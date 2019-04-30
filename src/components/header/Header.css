@@ -1,0 +1,27 @@
+.header{
+  padding: 0;
+  background-color:blue;
+  margin: 0;
+  height: 6em;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+}
+.header h2 {
+  color: rgb(183, 12, 250);
+  margin: .25em;
+  font-size: 4em;
+}
+.header ul {
+  color: #fc04a9;
+  font-size: 1em;
+}
+.header nav li {
+  list-style: none;
+  color: white;
+  display: block;
+}
+
+
+
+
