@@ -1,12 +1,12 @@
 .article {
   box-sizing: inherit;
-  border: solid 3px red;
+  /* border: solid 3px red; */
   background-color:#8a69d686; 
 }
 .articleCover {
+  /* border: solid 3px blue; */
   position: relative;
   display: inline-block;
-  border: solid 3px blue;
 }
 .articleCover img {
   width: 100%;
