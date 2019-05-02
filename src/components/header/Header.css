@@ -1,5 +1,6 @@
 .header{
   /* border:solid 3px red; */
+  box-sizing: border-box;
   padding: 0;
   background: -moz-linear-gradient(-70deg, #55cdb1 35%, #c168ba 55%, #ed2d9d 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-70deg, #55cdb1 35%,#c168ba 55%, #ed2d9d 100%); /* Chrome10-25,Safari5.1-6 */

@@ -1,0 +1,22 @@
+.mailingList{
+  padding:10px 10px;
+  font-family: 'Lato', sans-serif; 
+  color: white;
+}
+.mailingList button{
+  margin: 4px 40px;
+  width: 153px;
+  background: #ffffff3a;
+  border: solid #f0fb5c 3px;
+  font-family: 'Roboto', sans-serif; 
+  color: #32e0ff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+.mailingList button:hover {
+  border: solid 3px #32e0ffef;
+  color: #f0fb5c;
+};
