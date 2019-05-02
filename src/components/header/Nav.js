@@ -6,7 +6,9 @@ export default function Nav() {
     <>
       <nav className={style.nav}>
         <ul>
-          nav links
+          <li>PODCASTS</li>
+          <li>TEAM</li>
+          <li>CONTACT</li>
         </ul>
       </nav>
     </>
