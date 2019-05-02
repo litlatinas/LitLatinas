@@ -51,7 +51,14 @@ text-align: -webkit-match-parent;
   left:0;
   bottom:0;
 };
-.playButton:hover{
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+ .playButton:hover{
   color: #f0fb5c;
 }
 *,:after,:before {
