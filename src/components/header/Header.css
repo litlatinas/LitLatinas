@@ -1,23 +1,20 @@
 .header{
   border:solid 3px red;
   padding: 0;
-  background: -moz-linear-gradient(-45deg, #55cdb1 45%, #c168ba 55%, #ed2d9d 100%); /* FF3.6-15 */
+  background: -moz-linear-gradient(-60deg, #55cdb1 45%, #c168ba 55%, #ed2d9d 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #55cdb1 45%,#c168ba 55%, #ed2d9d 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #55cdb1 45%,#c168ba 55%,#ed2d9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   margin: 0;
   height: 6em;
   display: grid;
-  grid-template: 66px/minmax(18px,1fr) 570px;
-  grid-template-rows: 260px 2fr auto 0px auto auto 1fr 66px;
-  grid-template-columns: minmax(18px, 1fr) 570px 500px minmax(18px, 1fr);
   grid-row-gap: 10px;
   width: 100%;
-  height:500px;
+  height:300px;
   grid-template-columns: 2fr 1fr;
-  background:  linear-gradient(
+  /* background:  linear-gradient(
     rgba(85, 205, 177, 0.699),
     rgba(237, 45, 157, 0.61))
-  , url(https://scontent-sea1-1.cdninstagram.com/vp/3e71b8e9750c24e8c8e4a18c3f547608/5D573D3C/t51.2885-15/e35/40268680_319556315485870_2604361007198288976_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com) center;
+  , url(https://scontent-sea1-1.cdninstagram.com/vp/3e71b8e9750c24e8c8e4a18c3f547608/5D573D3C/t51.2885-15/e35/40268680_319556315485870_2604361007198288976_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com) center; */
   background-repeat: no-repeat;
   horizontal-align: middle;
   margin:.25em;
@@ -25,11 +22,12 @@
 }
 .header h2 {
   color: #8f5ace;
-  margin: .25em;
+  margin:0;
+  text-align: right;
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
   /* font-family: 'Faster One', cursive;*/
   /* font-family: 'Monofett', cursive;  */
   font-family: 'Paytone One', sans-serif;
@@ -37,6 +35,7 @@
    /* font-family: 'Roboto', sans-serif;  */
   /* font-family: 'Open Sans', sans-serif; */
   text-transform: uppercase;
+  font-style: oblique;  
   text-shadow: 2px 0 #f0fb5cce;
   letter-spacing: .33em;
   font-size: 3em;
@@ -44,10 +43,11 @@
 .header h3 {
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 3;
   font-family: 'Lato', sans-serif; 
   color:#ffffff;
+  text-align: right;
   letter-spacing: .25em;
   
 
@@ -59,8 +59,8 @@
 .header nav {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 .header nav li {
   display: inline;
@@ -78,8 +78,23 @@
 .header button{
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  margin: 4px 40px;
+  width: 153px;
+  background: #ffffff3a;
+  border: solid #f0fb5c 3px;
+  font-family: 'Roboto', sans-serif; 
+  color: #32e0ff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+.header button:hover {
+  border: solid 3px #32e0ffef;
+  color: #f0fb5c;
 };
 
 
