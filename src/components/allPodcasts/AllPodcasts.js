@@ -21,7 +21,7 @@ export default function AllPodcasts() {
       <li>
         <article className={styles.article}>
           <div className={styles.articleCover}>
-            <img className={styles.episodeImage} src="https://static.wixstatic.com/media/3929e2_21a7b9e9569d425fbc187debde69e473~mv2.jpg/v1/fill/w_960,h_545,al_c,q_85/3929e2_21a7b9e9569d425fbc187debde69e473~mv2.webp" />
+            <img className={styles.episodeImage} src="https://i1.sndcdn.com/artworks-000484441278-8ir3k6-t500x500.jpg" />
             <button className={styles.playButton}>LISTEN</button>
           </div>
           <span><h3 className={styles.episodeTitle}>Podcast Title</h3></span>
@@ -32,7 +32,7 @@ export default function AllPodcasts() {
       <li>
         <article className={styles.article}>
           <div className={styles.articleCover}>
-            <img className={styles.episodeImage} src="https://static.wixstatic.com/media/3929e2_2a485e94b7d14dcab3862f164bf4e784~mv2.jpg/v1/fill/w_1190,h_675,al_c,q_85/3929e2_2a485e94b7d14dcab3862f164bf4e784~mv2.webp" />
+            <img className={styles.episodeImage} src="https://i1.sndcdn.com/artworks-000416433828-efnrh2-t500x500.jpg" />
             <button className={styles.playButton}>LISTEN</button>
           </div>
           <span><h3 className={styles.episodeTitle}>Podcast Title</h3></span>
@@ -68,7 +68,7 @@ export default function AllPodcasts() {
       <li>
         <article className={styles.article}>
           <div className={styles.articleCover}>
-            <img className={styles.episodeImage} src="https://static.wixstatic.com/media/3929e2_2a485e94b7d14dcab3862f164bf4e784~mv2.jpg/v1/fill/w_1190,h_675,al_c,q_85/3929e2_2a485e94b7d14dcab3862f164bf4e784~mv2.webp" />
+            <img className={styles.episodeImage} src="https://scontent-sea1-1.cdninstagram.com/vp/3e71b8e9750c24e8c8e4a18c3f547608/5D573D3C/t51.2885-15/e35/40268680_319556315485870_2604361007198288976_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com" />
             <button className={styles.playButton}>LISTEN</button>
           </div>
           <span><h3 className={styles.episodeTitle}>Podcast Title</h3></span>
