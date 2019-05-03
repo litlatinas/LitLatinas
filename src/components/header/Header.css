@@ -1,11 +1,10 @@
 .header{
   /* border:solid 3px red; */
   box-sizing: border-box;
-  padding: 0;
+  margin:0em 0em 6em 0em;
   background: -moz-linear-gradient(-70deg, #55cdb1 35%, #c168ba 55%, #ed2d9d 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-70deg, #55cdb1 35%,#c168ba 55%, #ed2d9d 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(125deg, #55cdb1 35%,#c168ba 55%,#ed2d9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  margin: 0;
   height: 6em;
   display: grid;
   grid-row-gap: 10px;
@@ -18,7 +17,6 @@
   , url(https://scontent-sea1-1.cdninstagram.com/vp/3e71b8e9750c24e8c8e4a18c3f547608/5D573D3C/t51.2885-15/e35/40268680_319556315485870_2604361007198288976_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com)center;
   background-repeat: no-repeat;
   background-size: 200%;
-  margin:.25em;
   padding:.25em;
 }
 .header h2 {
@@ -77,11 +75,11 @@
   list-style: none;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;  
-  color: #32e0ffef;
+  color: #32e0ff;
   transition: all .2s ease-in-out; 
 }
 .header nav li:hover {
-  color: #f0fb5cce;
+  color: #f0fb5c;
   /* transform: scale(0.1); */
   cursor: pointer;
 }

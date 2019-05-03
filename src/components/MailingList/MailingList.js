@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function MailingList() {
   return (
     <div className={styles.mailingList}>
-      <FontAwesomeIcon className={styles.envelope}icon="envelope" size="10x" color="white"/> 
+      <FontAwesomeIcon className={styles.envelope} icon="envelope" size="7x"/> 
       <form className={styles.mailingListForm}>  
         <input type="text" placeholder="email" value=""></input>
         <button> JOIN OUR MAILING LIST</button>

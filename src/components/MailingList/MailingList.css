@@ -9,7 +9,7 @@
 }
 .mailingListForm {
   display:block;
-  padding:2em 1em;  
+  padding:0em 1em 2em 2em;  
   height: 2em;
   text-align: center;
   font-family: 'Lato', sans-serif; 
@@ -32,7 +32,7 @@
 .mailingListForm button{
   display:block;
   box-sizing: border-box;
-  /* margin: 2em; */
+  margin: 2em;
   width: 12em;
   margin:20px;
   background: #ffffff3a;

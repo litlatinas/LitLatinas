@@ -1,18 +1,27 @@
-.nav{
-  position: relative; 
-}
-.nav li {
-  display: inline-block;
-  color: white;
-  padding-right: 1em;
-}
-.nav li:hover {
-  display: inline;
-  color: black;
-}
 .linkers{
   text-decoration: none;
 }
-.nav li:hover{
-  color: back;
+ nav ul {
+  position: relative; 
+  margin:0;
+  padding:0;
+  height: 3em;
+  display: flex;
+  align-content: space-around;
+  background: rgba(224, 110, 214, 0.7);
+}
+nav li {
+  display: inline-block;
+  padding: 1em;
+  list-style: none;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;  
+  color: #32e0ff;
+  transition: all .2s ease-in-out; 
+}
+nav li:hover {
+  display: inline;
+  color: #f0fb5c;
+  transform: scale(1.2);
+  cursor: pointer;
 }
