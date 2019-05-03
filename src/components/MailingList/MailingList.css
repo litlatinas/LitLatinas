@@ -1,21 +1,22 @@
  
 .mailingList {
   display:flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .envelope {
   color: #f0fb5c;
 }
 .mailingListForm {
-  margin: 3em 0;
-  padding:2em 2em;  
+  display:block;
+  padding:2em 1em;  
   height: 2em;
   text-align: center;
   font-family: 'Lato', sans-serif; 
   color: rgba(224, 110, 214, 0.7);
 }
 .mailingListForm input{
+  display:block;
   margin: .9em;
   border: none;
   background: transparent;
@@ -29,9 +30,11 @@
   caret-color: white;
 }
 .mailingListForm button{
+  display:block;
+  box-sizing: border-box;
   /* margin: 2em; */
   width: 12em;
-  bottom:00px;
+  margin:20px;
   background: #ffffff3a;
   border: solid #f0fb5c 3px;
   font-family: 'Roboto', sans-serif; 

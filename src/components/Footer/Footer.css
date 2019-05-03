@@ -1,8 +1,13 @@
 .footer {
   background:black;
 }
+.footer nav ul {
+  height: 3em;
+  display: flex;
+  align-content: space-around;
+  background: rgba(224, 110, 214, 0.7);
+}
 .footer nav li {
-  display: inline;
   list-style: none;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;  
@@ -11,6 +16,6 @@
 }
 .footer nav li:hover {
   color: #f0fb5cce;
-  transform: scale(2.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
