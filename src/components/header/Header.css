@@ -25,10 +25,8 @@
   padding:.25em;
 }
 .header h2 {
-  color: #8f5ace;
   margin:0;
   min-width: 0;
-  text-align: right;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
@@ -37,13 +35,16 @@
   /* font-family: 'Monofett', cursive;  */
   font-family: 'Paytone One', sans-serif;
   /* font-family: 'Lato', sans-serif;  */
-   /* font-family: 'Roboto', sans-serif;  */
+  /* font-family: 'Roboto', sans-serif;  */
   /* font-family: 'Open Sans', sans-serif; */
-  text-transform: uppercase;
   font-style: oblique;  
+  font-size: 3em;
+  color: #8f5ace;
+  text-align: right;
+  text-transform: uppercase;
   text-shadow: 2px 0 #f0fb5cce;
   letter-spacing: .33em;
-  font-size: 3em;
+  
 }
 .header h3 {
   grid-column-start: 1;
