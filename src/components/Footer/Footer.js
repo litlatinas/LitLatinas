@@ -6,7 +6,7 @@ import Nav from '../Nav/Nav';
 export default function Footer() {
   return (
     <footer className={styles.footer}>  
-      <Nav className={styles.nav} />
+      <Nav />
       <MailingList />
       
     </footer>

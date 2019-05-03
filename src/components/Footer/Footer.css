@@ -1,3 +1,16 @@
 .footer {
   background:black;
 }
+.footer nav li {
+  display: inline;
+  list-style: none;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;  
+  color: #32e0ffef;
+  transition: all .2s ease-in-out; 
+}
+.footer nav li:hover {
+  color: #f0fb5cce;
+  transform: scale(2.1);
+  cursor: pointer;
+}
