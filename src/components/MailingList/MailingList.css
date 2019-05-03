@@ -1,31 +1,37 @@
  
 .mailingList {
   display:flex;
-  align-items: basline;
+  align-items: center;
   justify-content: center;
 }
 .envelope {
   color: #f0fb5c;
-  width:500px;
 }
 .mailingListForm {
-  padding:10px 10px;
-  width:50%;
-  height:200px;
+  margin: 3em 0;
+  padding:2em 2em;  
+  height: 2em;
   text-align: center;
   font-family: 'Lato', sans-serif; 
-  /* font-weight:900;  */
-  color: white;
+  color: rgba(224, 110, 214, 0.7);
 }
 .mailingListForm input{
-  margin: .2em;
+  margin: .9em;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
   font-size: 25px;
-  width:275px;
-  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width:40 em;
+}
+.mailingListForm input{
+  caret-color: white;
 }
 .mailingListForm button{
-  margin: 2em;
+  /* margin: 2em; */
   width: 12em;
+  bottom:00px;
   background: #ffffff3a;
   border: solid #f0fb5c 3px;
   font-family: 'Roboto', sans-serif; 
@@ -39,4 +45,16 @@
 .mailingListForm button:hover {
   border: solid 3px #32e0ffef;
   color: #f0fb5c;
+}
+::-webkit-input-placeholder {
+  color:rgba(224, 110, 214, 0.7);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:rgba(224, 110, 214, 0.7);
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color:rgba(224, 110, 214, 0.7);
+}
+:-ms-input-placeholder {  
+  color:rgba(224, 110, 214, 0.7);
 };
