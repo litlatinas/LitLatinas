@@ -17,8 +17,8 @@ export default function AllPodcasts() {
             <span><h3 className={styles.episodeTitle}>Podcast Title</h3></span>
             <h3 className={styles.episodeDate}>Date</h3>
             <p className={styles.episodeDescription}>Chivearse rifar. piruja ardido. troque mero mero. apretado mariposón. naranjas cateado. presumido diste al clavo. chinga troca. 
-          buenota mariachi. vieja armarla. se me prendio el foco yonque. cabrón al brinco. pollero eres junior. alebrestarse jalas parejo. híjole burra. 
-          el otro lado despapaye. talacha julia. padre valemadrista. calote charolastra. reventón fumigado. chilango pinche. cerote livais.</p>
+            buenota mariachi. vieja armarla. se me prendio el foco yonque. cabrón al brinco. pollero eres junior. alebrestarse jalas parejo. híjole burra. 
+            el otro lado despapaye. talacha julia. padre valemadrista. calote charolastra. reventón fumigado. chilango pinche. cerote livais.</p>
           </article>
         </li>
         <li>
