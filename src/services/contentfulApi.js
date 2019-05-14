@@ -11,7 +11,7 @@ export function getPosts() {
 }
 
 export function getPostBySlug(slug) {
-  const client = createClient({ space: SPACE_ID, accessToken: ACCESS_TOKEN });
+  const client = createClient({ space: process.env.SPACE_ID, accessToken: process.env.ACCESS_TOKEN });
 
   return client.getEntries({ content_type: 'podcast', 'fields.slug': slug });
 }

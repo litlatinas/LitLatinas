@@ -90,7 +90,7 @@ class Podcasts extends Component {
         const podcasts = response.items.map(item => item.fields);
 
         this.setState({ podcasts });
-        console.log('podcasts', getPosts);
+        // console.log('podcasts', getPosts);
       })
       .catch(error => {
       });
