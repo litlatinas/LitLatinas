@@ -77,34 +77,36 @@ import React, { Component } from 'react';
 import { getPosts } from '../../services/contentfulApi';
 import PostListItem from './Podcast';
 
-class PostList extends Component {
+class Podcasts extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { posts: [] };
+    this.state = { podcasts: [] };
   }
 
   componentDidMount() {
     getPosts()
       .then(response => {
-        const posts = response.items.map(item => item.fields);
+        const podcasts = response.items.map(item => item.fields);
 
-        this.setState({ posts });
+        this.setState({ podcasts });
+        console.log('podcasts', getPosts);
       })
       .catch(error => {
-        console.error(error);
       });
   }
 
   render() {
-    const postNodes = this.state.posts
+    const postNodes = this.state.podcasts
       .sort(
         (first, second) =>
           new Date(first.datePublished).getTime() <
           new Date(second.datePublished).getTime()
       )
-      .map(post => {
-        return <PostListItem {...post} key={post.slug} />;
+      .map((podcast, i)=> {
+        //key={podcast.slug}
+        //it throws an error if using
+        return <PostListItem {...podcast} key={i} />;
       });
 
     return (
@@ -115,4 +117,4 @@ class PostList extends Component {
   }
 }
 
-export default PostList;
+export default Podcasts;

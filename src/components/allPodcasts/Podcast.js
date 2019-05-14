@@ -1,10 +1,13 @@
 // import moment from 'moment';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+// import PropTypes from prop-types;
+
 
 // import './PostListItem.css';
 
 class PostListItem extends Component {
+  
   render() {
     const { datePublished, title, subtitle, slug } = this.props;
 
@@ -18,12 +21,15 @@ class PostListItem extends Component {
         <h2 className="subtitle is-5">
           {subtitle}
         </h2>
-        <span>
+        {/* <span>
           {moment(datePublished).format('MMMM D, YYYY')}
-        </span>
+        </span> */}
       </div>
     );
   }
+  // PostListItem.propTypes = {
+    
+  // }
 }
 
 export default PostListItem;
