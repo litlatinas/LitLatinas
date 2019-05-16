@@ -75,7 +75,7 @@
 import React, { Component } from 'react';
 
 import { getPodcasts, getPodcastBySlug } from '../../services/contentfulApi';
-import PostListItem from './Podcast';
+import PostListItem from '../Podcasts/Podcast';
 
 class Podcasts extends Component {
   constructor(props) {
@@ -92,7 +92,7 @@ class Podcasts extends Component {
         const podcasts = response.items.map(item => item.fields);
 
         this.setState({ podcasts });
-        console.log('podcasts', getPodcasts());
+        // console.log('podcasts', getPodcasts());
       })
       .catch(error => {
       });

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import { getPodcasts } from '../../services/contentfulApi';
 import styles from './AllPodcasts.css';
+import Podcast from './Podcast';
 
 class PodcastsList extends Component {
   constructor(props){
@@ -20,23 +21,25 @@ class PodcastsList extends Component {
         // console.log('podcasts', getPodcasts());
       })
       .catch(error => { 
-        error.message;
+        console.error(error);
       });
   
   }
   render() {
-    const podcasts = this.state.podcasts;
-    podcasts.sort(
-      (first, second) =>
-        new Date(first.datePublished).getTime() <
+    const podcasts = this.state.podcasts    
+      .sort(
+        (first, second) =>
+          new Date(first.datePublished).getTime() <
           new Date(second.datePublished).getTime()
-    )
-      .map(podcast=> {
+      )
+      .map((podcast)=> {
       //key={podcast.slug}
       //it throws an error if using
-        return <li key={podcast.slug} podcast={podcast} />;
+      
+        // console.log('podcast', podcast);
+        return <li key={podcast.slug} ><Podcast podcast={podcast}/></li>;
       });
-
+    // console.log('podcasts', podcasts);
     return (
       <ul className={styles.podcastList}>
         {podcasts}
