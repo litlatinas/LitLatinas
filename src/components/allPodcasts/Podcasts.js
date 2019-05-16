@@ -74,14 +74,16 @@
 
 import React, { Component } from 'react';
 
-import { getPodcasts } from '../../services/contentfulApi';
+import { getPodcasts, getPodcastBySlug } from '../../services/contentfulApi';
 import PostListItem from './Podcast';
 
 class Podcasts extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { podcasts: [] };
+    this.state = { 
+      podcasts: [] 
+    };
   }
 
   componentDidMount() {
@@ -94,7 +96,9 @@ class Podcasts extends Component {
       })
       .catch(error => {
       });
+  
   }
+  
 
   render() {
     const postNodes = this.state.podcasts

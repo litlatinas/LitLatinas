@@ -8,6 +8,12 @@ import { Link } from 'react-router-dom';
 
 class PostListItem extends Component {
   
+  componentDidMount() {
+    getPodcastBySlug(slug).then(response => {
+      const post = response.items[0].fields;
+      this.setState({ ...post, isLoading: false });
+    });
+  }
   render() {
     const { title, slug } = this.props;
 
