@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 class PostListItem extends Component {
   
   render() {
-    const { datePublished, title, subtitle, slug } = this.props;
+    const { title, slug } = this.props;
 
     return (
       <div className="post-list-item">
@@ -18,9 +18,7 @@ class PostListItem extends Component {
             {title}
           </Link>
         </h1>
-        <h2 className="subtitle is-5">
-          {subtitle}
-        </h2>
+        
         {/* <span>
           {moment(datePublished).format('MMMM D, YYYY')}
         </span> */}

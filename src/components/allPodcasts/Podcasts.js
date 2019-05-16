@@ -74,7 +74,7 @@
 
 import React, { Component } from 'react';
 
-import { getPosts } from '../../services/contentfulApi';
+import { getPodcasts } from '../../services/contentfulApi';
 import PostListItem from './Podcast';
 
 class Podcasts extends Component {
@@ -85,12 +85,12 @@ class Podcasts extends Component {
   }
 
   componentDidMount() {
-    getPosts()
+    getPodcasts()
       .then(response => {
         const podcasts = response.items.map(item => item.fields);
 
         this.setState({ podcasts });
-        // console.log('podcasts', getPosts);
+        console.log('podcasts', getPodcasts());
       })
       .catch(error => {
       });
