@@ -5,7 +5,6 @@ import store from './store';
 import App from './components/app/App';
 import 'normalize.css';
 
-
 render(
   <Provider store={store}>
     <App />
