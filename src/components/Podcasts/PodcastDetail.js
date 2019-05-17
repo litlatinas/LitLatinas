@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getPodcastBySlug } from '../../services/contentfulApi';
+import ReactPlayer from 'react-player';
 
 class Detail extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class Detail extends Component {
         <image src={image} alt='podcast art'/>
         <p>{body}</p>
         <ul>{tags}</ul>
+        <ReactPlayer url={podcast}/>
       </section>
     );
   }
