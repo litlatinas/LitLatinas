@@ -1,4 +1,4 @@
-const { getPodcasts } = require('./contentfulApi');
+const { getPodcasts, getResources } = require('./contentfulApi');
 
 
 jest.mock('./contentfulApi');
@@ -10,5 +10,13 @@ describe('contentfulApi wireup', () => {
         expect(podcasts).toHaveLength(4);
         expect.any(Array);
       });
+  }),
+  it('gets a list resources', () => {
+    return getResources()
+      .then(resources => {
+        expect(resources).toHaveLength(4);
+        expect.any(Array);
+      });
   });
+
 });

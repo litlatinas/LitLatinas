@@ -18,6 +18,28 @@ export const getPodcasts = () => {
     }
 
   ];
-  
   return Promise.resolve(podcasts);
+};
+
+export const getResources = () => {
+  const resources = [
+    {
+      resourceTitle: 'help',
+      website:'www.resourcehelp.com',
+    },
+    {
+      resourceTitle: 'help',
+      website:'www.resourcehelp.com',
+    },
+    {
+      resourceTitle: 'help',
+      website:'www.resourcehelp.com',
+    },
+    {
+      resourceTitle: 'help',
+      website:'www.resourcehelp.com',
+    }
+
+  ];
+  return Promise.resolve(resources);
 };
