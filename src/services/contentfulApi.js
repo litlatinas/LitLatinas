@@ -6,9 +6,6 @@ const client = createClient({
 });
 
 export function getPodcasts() {
-  
-  // console.log('client', client);
-  // console.log(client.getEntries({ content_type: 'podCast' }));
   return client.getEntries({ content_type: 'podCast' });
 }
 
