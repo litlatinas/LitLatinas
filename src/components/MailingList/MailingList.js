@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import styles from './MailingList.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faEnvelope)
+
+
+
 
 
 class MailingList extends Component {
