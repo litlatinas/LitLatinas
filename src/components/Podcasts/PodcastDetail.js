@@ -27,8 +27,8 @@ class Detail extends Component {
       this.setState({ ...post, isLoading: false });
 
       // After the post is loaded, we need to re-call Prism's highlight method to get
-      // syntax highlighting to fire properly
-      window.Prism.highlightAll();
+      // // syntax highlighting to fire properly
+      // window.Prism.highlightAll();
     });
   }
 
