@@ -11,7 +11,7 @@
   background: rgba(224, 110, 214, 0.7);
 }
 .footer nav li {
-  list-style: none;
+  list-style-type: none;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;  
   color: #32e0ffef;
