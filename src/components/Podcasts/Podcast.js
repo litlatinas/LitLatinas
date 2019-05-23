@@ -20,7 +20,10 @@ function Podcast({ podcast }) {
        <Link to={`/podcasts/${podcast.slug}`}>
        <img className={styles.episodeImage} src= {podcast.image} alt="podcast-art"/> 
        </Link> 
-       <button className={styles.playButton} onClick={podcast.podcast}><FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
+       <button className={styles.playButton} 
+      //  onClick={podcast.podcast}
+       >
+         <FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
           </div>
           <h4>{moment(podcast.datePublished).format('MMMM D, YYYY')}</h4>
           <p>{podcast.description}</p>
