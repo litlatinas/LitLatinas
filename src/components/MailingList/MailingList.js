@@ -19,14 +19,7 @@ const Form = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
-      style={{
-        background: '#efefef',
-        borderRadius: 2,
-        padding: 10,
-        display: 'inline-block'
-      }}
-    >
+    <div className={styles.mailingList}>
       {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
       {status === 'error' && (
         <div
@@ -42,13 +35,13 @@ const Form = ({ status, message, onValidated }) => {
       )}
 
       <FontAwesomeIcon className={styles.envelope} icon="envelope" size="7x" />
-      {/* <form className={styles.mailingListForm}> */}
-      <input type="email" placeholder="email" ref={node => (email = node)}/>
-      <input type="text" placeholder="name" ref={node => (name = node)}/>
-      <button onClick={submit}>
-        JOIN OUR MAILING LIST
-      </button>
-      {/* </form> */}
+      <div className={styles.mailingListForm}>
+        <input type="email" placeholder="email" ref={node => (email = node)} />
+        <input type="text" placeholder="name" ref={node => (name = node)} />
+        <button onClick={submit}>
+          JOIN OUR MAILING LIST
+        </button>
+      </div>
     </div >
   );
 };
