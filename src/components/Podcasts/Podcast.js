@@ -30,7 +30,9 @@ function Podcast({ podcast }) {
           <h3>{podcast.title}</h3>
        </Link> 
        <div className={styles.articleCover}>
-       <a href={podcast.slug}><img className={styles.episodeImage} src= {podcast.image} /></a>
+       <Link to={`/podcasts/${podcast.slug}`}>
+       <img className={styles.episodeImage} src= {podcast.image} alt="podcast-art"/> 
+       </Link> 
        <button className={styles.playButton} onclick={podcast.podcast}><FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
           </div>
           <h4>{podcast.datePublished}</h4>
