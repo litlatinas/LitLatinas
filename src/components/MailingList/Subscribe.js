@@ -63,11 +63,6 @@ class Demo extends Component {
     const url = "https://yahoo.us20.list-manage.com/subscribe/post?u=9acafd8fd1065105772d48d18&amp;id=57bf91db14"
     return (
       <div>
-        <h1>react-mailchimp-subscribe Demo</h1>
-        {/* <GithubCorner href="https://github.com/revolunet/react-mailchimp-subscribe" /> */}
-        <h2>Default Form</h2>
-        <MailchimpSubscribe url={url} />
-        <h2>Custom Form</h2>
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (
@@ -84,5 +79,3 @@ class Demo extends Component {
 }
 
 export default Demo;
-
-

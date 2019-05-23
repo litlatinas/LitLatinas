@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.css';
-// import MailingList from '../MailingList/MailingList';
+import MailingList from '../MailingList/MailingList';
 import Subscribe from '../MailingList/Subscribe';
 import Nav from '../Nav/Nav';
 import Credits from '../credits/Credits';
@@ -11,7 +11,8 @@ export default function Footer() {
     <>
     <Nav />
     <footer className={styles.footer}>  
-      <Subscribe />
+      {/* <Subscribe /> */}
+      <MailingList />
       <Credits />
     </footer>
     </>
