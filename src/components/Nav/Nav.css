@@ -18,15 +18,12 @@ nav li a {
   font-family: 'Roboto', sans-serif;  
   color: #32e0ff;
   transition: all .2s ease-in-out; 
+  text-decoration:none;
 }
-
 nav ul li a:hover {
   display: inline;
   color: #f0fb5c;
-  transform: scale(1.2);
+  transform: scale(.25);
   cursor: pointer;
-}
-nav li:visited {
   text-decoration:none;
-
 }

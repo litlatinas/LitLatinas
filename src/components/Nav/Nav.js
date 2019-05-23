@@ -9,8 +9,8 @@ export default function Nav() {
         <ul>
           <li><Link to='/' style={{ textDecoration: 'none' }}>PODCASTS</Link></li>
           <li><Link to='/resources' style={{ textDecoration: 'none' }}>RESOURCES</Link></li>
-          <li>TEAM</li>
-          <li>CONTACT</li>
+          <li><a href="#">TEAM</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
     </>
