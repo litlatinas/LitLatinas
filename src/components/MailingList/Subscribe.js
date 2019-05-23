@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import GithubCorner from 'react-github-corner';
-import MailchimpSubscribe from 'mail';
+// import { render } from 'react-dom';
+// import GithubCorner from 'react-github-corner';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
   let email, name;
   const submit = () =>
     email &&
-    name &&
+    // name &&
     email.value.indexOf("@") > -1 &&
     onValidated({
       EMAIL: email.value,
@@ -60,12 +60,11 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 class Demo extends Component {
   render() {
-    const url =
-      "https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e";
+    const url = "https://yahoo.us20.list-manage.com/subscribe/post?u=9acafd8fd1065105772d48d18&amp;id=57bf91db14"
     return (
       <div>
         <h1>react-mailchimp-subscribe Demo</h1>
-        <GithubCorner href="https://github.com/revolunet/react-mailchimp-subscribe" />
+        {/* <GithubCorner href="https://github.com/revolunet/react-mailchimp-subscribe" /> */}
         <h2>Default Form</h2>
         <MailchimpSubscribe url={url} />
         <h2>Custom Form</h2>
@@ -84,4 +83,6 @@ class Demo extends Component {
   }
 }
 
-render(<Demo />, document.querySelector("#demo"));
+export default Demo;
+
+
