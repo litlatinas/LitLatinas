@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import moment from 'moment';
 
 library.add(faPlayCircle)
 
@@ -19,7 +20,7 @@ function Podcast({ podcast }) {
        <Link to={`/podcasts/${podcast.slug}`}>
        <img className={styles.episodeImage} src= {podcast.image} alt="podcast-art"/> 
        </Link> 
-       <button className={styles.playButton} onclick={podcast.podcast}><FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
+       <button className={styles.playButton} onClick={podcast.podcast}><FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
           </div>
           <h4>{moment(podcast.datePublished).format('MMMM D, YYYY')}</h4>
           <p>{podcast.description}</p>
