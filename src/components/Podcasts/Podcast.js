@@ -6,23 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 
-// import { getPodcastBySlug } from '../../services/contentfulApi';
 library.add(faPlayCircle)
+
 function Podcast({ podcast }) {
-  
-  
-  
-  // componentDidMount() {
-  //   const { slug } = this.props.match.params;
-
-  //   getPodcastBySlug(slug)
-  //     .then(response => {
-  //       const post = response.items[0].fields;
-  //       this.setState({ ...post, isLoading: false });
-  //     });
-  // }
- 
-
   return (
     <article className={styles.article}>
       <h3 className={styles.episodeTitle}></h3>
@@ -35,14 +21,8 @@ function Podcast({ podcast }) {
        </Link> 
        <button className={styles.playButton} onclick={podcast.podcast}><FontAwesomeIcon className={styles.playCircle} icon="play-circle"/> LISTEN</button>
           </div>
-          <h4>{podcast.datePublished}</h4>
+          <h4>{moment(podcast.datePublished).format('MMMM D, YYYY')}</h4>
           <p>{podcast.description}</p>
-          
-      
-        
-      {/* <span>
-          {moment(datePublished).format('MMMM D, YYYY')}
-        </span> */}
     </article>
   );
 }

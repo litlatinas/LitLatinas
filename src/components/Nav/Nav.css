@@ -1,7 +1,7 @@
 .linkers{
   text-decoration: none;
 }
- nav ul {
+.nav ul {
   position: relative; 
   margin:0;
   padding:0;
@@ -10,7 +10,7 @@
   align-content: space-around;
   background: rgba(224, 110, 214, 0.7);
 }
-nav li a {
+.nav li a {
   display: inline-block;
   padding: 1em;
   list-style: none;
@@ -20,7 +20,7 @@ nav li a {
   transition: all .2s ease-in-out; 
   text-decoration:none;
 }
-nav ul li a:hover {
+.nav ul li a:hover {
   display: inline;
   color: #f0fb5c;
   transform: scale(.25);
