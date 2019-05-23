@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { getPodcastBySlug } from '../../services/contentfulApi';
 import ReactPlayer from 'react-player';
+// import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
+import styles from './PodcastDetail.css';
 
 class Detail extends Component {
   constructor(props) {
@@ -27,7 +29,7 @@ class Detail extends Component {
       this.setState({ ...post, isLoading: false });
 
       // After the post is loaded, we need to re-call Prism's highlight method to get
-      // // syntax highlighting to fire properly
+      // syntax highlighting to fire properly
       // window.Prism.highlightAll();
     });
   }
@@ -44,13 +46,25 @@ class Detail extends Component {
       image, tags } = this.state;
 
     return (
-      <section>
+      <section className={styles.section}>
         <h2>{title}</h2>
-        <p>{datePublished}</p>
+        <h4>{datePublished}</h4>
         <image src={image} alt='podcast art'/>
         <p>{body}</p>
-        <ul>{tags}</ul>
-        <ReactPlayer url={podcast}/>
+        <div className={styles.div}>
+        <ReactPlayer 
+          className={styles.reactPlayer }
+          url={podcast}
+          light= {true }
+        />
+        {/* <ResponsivePlayer /> */}
+        </div>
+        <h3>TAGS:</h3>
+        <ul>
+          <li>
+            {tags}
+          </li>
+        </ul>
       </section>
     );
   }

@@ -1,7 +1,7 @@
 .linkers{
   text-decoration: none;
 }
- nav ul {
+.nav ul {
   position: relative; 
   margin:0;
   padding:0;
@@ -10,7 +10,7 @@
   align-content: space-around;
   background: rgba(224, 110, 214, 0.7);
 }
-nav li {
+.nav li a {
   display: inline-block;
   padding: 1em;
   list-style: none;
@@ -18,10 +18,12 @@ nav li {
   font-family: 'Roboto', sans-serif;  
   color: #32e0ff;
   transition: all .2s ease-in-out; 
+  text-decoration:none;
 }
-nav li:hover {
+.nav ul li a:hover {
   display: inline;
   color: #f0fb5c;
-  transform: scale(1.2);
+  transform: scale(.25);
   cursor: pointer;
+  text-decoration:none;
 }
