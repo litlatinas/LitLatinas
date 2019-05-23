@@ -1,0 +1,57 @@
+.section {
+    background-color:#8a69d686;
+    margin: 1%;
+    padding: 2%;
+}
+.section h2 {
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.section h3 {
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.section h4 {
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.section img{
+    width:200%;
+}
+.section p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .75em;
+}
+.section ul { 
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section li{
+    position: relative;
+    padding:0.5em;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color:  #32e0ffef;
+}
+.section div {
+    display:relative;
+    
+}
+.reactPlayer {
+    margin:2%;
+    width:900px;
+    justify-content: center;
+}
+.soundHeader__rightRow, .soundHeader__logo {
+    display: none;
+    text-align: right;
+}
