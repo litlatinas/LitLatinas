@@ -7,8 +7,8 @@ export default function Nav() {
     <>
       <nav className={style.nav}>
         <ul>
-          <li><Link to='/'>PODCASTS</Link></li>
-          <li><Link to='/resources'>Resources</Link></li>
+          <li><Link to='/' style={{ textDecoration: 'none' }}>PODCASTS</Link></li>
+          <li><Link to='/resources' style={{ textDecoration: 'none' }}>RESOURCES</Link></li>
           <li>TEAM</li>
           <li>CONTACT</li>
         </ul>
