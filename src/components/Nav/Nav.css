@@ -22,9 +22,8 @@
   text-decoration:none;
 }
 .nav ul li a:hover {
-  display: inline;
   color: #f0fb5c;
-  transform: scale(.25);
+  transform: scale(1.1`);
   cursor: pointer;
   text-decoration:none;
 }
