@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './Resource.css';
 
 function Resource({ resource }) {
-  console.log('file', resource.file);
   return (
     <>
       <section className={styles.section}>
