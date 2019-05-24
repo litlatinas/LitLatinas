@@ -17,7 +17,6 @@ class ResourceList extends Component {
     getResources()
       .then(response => {
         const resources = response.items.map(item => item.fields);
-
         this.setState({ resources });
       })
       .catch(error => { 
@@ -26,18 +25,15 @@ class ResourceList extends Component {
   
   }
   render() {
-    const resources = this.state.resources    
+    const resources = this.state.resources 
       .sort(
         (first, second) =>
           new Date(first.datePublished).getTime() <
           new Date(second.datePublished).getTime()
       )
       .map((resource, i)=> {
-     
-        console.log('resourceItem', resource);
         return <li key={i} ><Resource resource={resource}/></li>;
       });
-    // console.log('podcasts', podcasts);
     return (
       <ul>
         {resources}

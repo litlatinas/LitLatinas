@@ -1,8 +1,9 @@
 .footer {
   background:black;
-  margin:0em 0em 2em 0em;
+  margin: 0;
+  padding: 0;
 }
- .footer nav ul {
+ /* .footer nav ul {
   margin:0;
   padding:0;
   height: 3em;
@@ -10,23 +11,23 @@
   align-content: space-around;
   background: rgba(224, 110, 214, 0.7);
   list-style: none;
-}
-.footer nav li {
+} */
+/* .footer nav li {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;  
   color: #32e0ffef;
   transition: all .2s ease-in-out; 
-}
-.footer nav li:hover {
+} */
+/* .footer nav li:hover {
   color: #f0fb5cce;
   transform: scale(1.2);
   cursor: pointer;
-} 
-.footer credits {
+}  */
+/* .credits {
   margin:0;
   padding:0;
   height: 3em;
   display: flex;
   align-content: space-around;
   background: rgba(224, 110, 214, 0.7);
-};
+}; */
