@@ -29,6 +29,10 @@
 }
 .mailingListForm input{
   caret-color: white;
+  color:white;
+}
+.input:focus{
+  color:white;
 }
 .mailingListForm button{
   display:block;
