@@ -48,7 +48,7 @@ const Form = ({ status, message, onValidated }) => {
 
 class MailingList extends Component {
   render() {
-    const url = 'https://yahoo.us20.list-manage.com/subscribe/post?u=9acafd8fd1065105772d48d18&amp;id=57bf91db14';
+    const url = 'https://gmail.us20.list-manage.com/subscribe/post?u=e8e2a5bc28b9a9cee48f6d372&amp;id=e37f71128d';
     return (
       <div>
         <MailchimpSubscribe
@@ -67,3 +67,5 @@ class MailingList extends Component {
 }
 
 export default MailingList;
+
+
