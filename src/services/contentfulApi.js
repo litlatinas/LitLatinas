@@ -14,5 +14,5 @@ export function getPodcastBySlug(slug) {
 }
 
 export function getResources() {
-  return client.getEntries({ content_type: 'resources' });
+  return client.getEntries({ content_type: 'resource' });
 }

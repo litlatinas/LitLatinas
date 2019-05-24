@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { getResources } from '../../services/contentfulApi';
 // import styles from './AllPodcasts.css';
 import Resource from './Resource';
-import styles from './Resource.css'
+import styles from './Resource.css';
 
 class ResourceList extends Component {
   constructor(props){
