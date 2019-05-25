@@ -61,7 +61,7 @@ button::after {
   bottom:4px;
 }
 .playButton:hover{
-  color: #f0fb5c;
+  color: #fdc32a;
 }
 *,:after,:before {
   -webkit-box-sizing: inherit;

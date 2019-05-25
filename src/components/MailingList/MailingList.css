@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .envelope {
-  color: #f0fb5c;
+  color: #fdc32a;
 }
 .mailingListForm {
   display:block;
@@ -41,7 +41,7 @@
   width: 12em;
   margin:20px;
   background: #ffffff3a;
-  border: solid #f0fb5c 3px;
+  border: solid #fdc32a 3px;
   font-family: 'Roboto', sans-serif; 
   color: #32e0ff;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 .mailingListForm button:hover {
   border: solid 3px #32e0ffef;
-  color: #f0fb5c;
+  color: #fdc32a;
 }
 ::-webkit-input-placeholder {
   color:rgba(224, 110, 214, 0.7);

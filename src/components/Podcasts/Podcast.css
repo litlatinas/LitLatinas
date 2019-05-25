@@ -1,7 +1,6 @@
 .article {
-    /* border: solid 3px red;  */
+    border: solid 1px black; 
     box-sizing: inherit;
-    background-color:#8a69d686;  
   }
   .articleCover {
     /* border: solid 3px blue; */
@@ -11,8 +10,8 @@
   }
   .article h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .33em; 
-    color: #32e0ffef;
+    font-size: .66em; 
+    color: black;
     text-transform: uppercase;
 
   }
@@ -35,14 +34,14 @@
   text-align: -webkit-match-parent;
   }
   .article a {
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     text-align: center;
    }
   .article p {
-   color:white;
+   color:black;
     margin:.25em;
     padding:.25em;
     font-size: 1em;
@@ -62,12 +61,12 @@
   }
   .playButton{
     position:absolute;
-    background-color: rgba(224, 110, 214, 0.7);
+    background-color: rgba(41, 41, 41, 0.753);
     background-size: contain;
     cursor: pointer;
     font-family: FontAwesome, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     content:f144;
-    color: #32e0ffef;
+    color: #fdc52ae0;
     text-shadow: 2px 0 rgba(94, 94, 94, 0.3);
     letter-spacing: .25em;
     width: max-content;
@@ -76,7 +75,7 @@
     bottom:4px;
   }
   .playButton:hover{
-    color: #f0fb5c;
+    color: #fdc32a;
   }
   *,:after,:before {
     -webkit-box-sizing: inherit;

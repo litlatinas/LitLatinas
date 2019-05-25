@@ -9,7 +9,7 @@
   height: 3em;
   display: flex;
   align-content: space-around;
-  background: rgba(224, 110, 214, 0.7);
+  background:rgba(41, 41, 41, 0.753);
 }
 .nav li a {
   display: inline-block;
@@ -17,12 +17,12 @@
   list-style: none;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;  
-  color: #32e0ff;
+  color: #fdc32a;
   transition: all .2s ease-in-out; 
   text-decoration:none;
 }
 .nav ul li a:hover {
-  color: #f0fb5c;
+  color: white;
   transform: scale(1.1);
   cursor: pointer;
   text-decoration:none;
