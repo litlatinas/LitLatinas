@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
-import { getResources } from '../../services/contentfulApi';
+import { getResources } from '../../services/prismicApi';
 // import styles from './AllPodcasts.css';
 import Resource from './Resource';
 import styles from './Resource.css';
@@ -16,7 +16,8 @@ class ResourceList extends Component {
   componentDidMount() {
     getResources()
       .then(response => {
-        const resources = response.items.map(item => item.fields);
+        console.log('response', response.results)
+        const resources = response.results.map(item => item);
         this.setState({ resources });
       })
       .catch(error => { 
