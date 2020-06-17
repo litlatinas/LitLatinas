@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import styles from './MailingList.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+
+import styles from './mailingList.css';
 
 library.add(faEnvelope);
 

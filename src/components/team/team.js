@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './Team.css';
+
+import styles from './team.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 
 export default function Team() {
   return (

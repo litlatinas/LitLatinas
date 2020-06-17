@@ -1,0 +1,24 @@
+.section {
+  display:flex;
+  flex-wrap: wrap;
+  margin:2em;
+  width: 50%;
+  background-color:#8a69d686; 
+}
+.section h2{
+  margin: .5em;
+  text-transform:uppercase;
+  color:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section p {
+  margin: .5em;
+}
+.section a {
+  margin: .5em;
+}
+
+
+ul {
+  list-style-type: none;
+}

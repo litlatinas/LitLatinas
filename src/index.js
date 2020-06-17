@@ -1,13 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import store from './store';
-import App from './components/app/App';
+import App from './components/app/app';
 import 'normalize.css';
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App />,
   document.getElementById('root')
 );
