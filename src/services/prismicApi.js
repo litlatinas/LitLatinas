@@ -1,17 +1,13 @@
 	
 import Prismic from 'prismic-javascript';
 
-const apiEndpoint = 'https://litlatinas.cdn.prismic.io/api/v2';
+import { prismicApi } from '../utils/constants';
  
-const Client = Prismic.client(apiEndpoint);
+const Client = Prismic.client(prismicApi);
+console.log('Client: ', Client);
 
-export const getResources = async() => {
+export const prismicGetter = async(type) => {
   return Client.query(
-    Prismic.Predicates.at('document.type', 'resource'));
+    Prismic.Predicates.at('document.type', type)
+  );
 };
-
-export const getBooks = async() => {
-  return Client.query(
-    Prismic.Predicates.at('document.type', 'book')); 
-};
-
