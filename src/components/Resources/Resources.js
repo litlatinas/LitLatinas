@@ -1,46 +1,31 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-import { getResources } from '../../services/prismicApi';
-// import styles from './AllPodcasts.css';
-import Resource from './Resource';
-import styles from './Resource.css';
+import React, { useState, useEffect } from 'react';
+import { prismicGetter } from '../../services/prismicApi';
+import Resource from './resource';
 
-class ResourceList extends Component {
-  constructor(props){
-    super(props);
+const Resources = () => {
+  const [prismicData, setPrismicData] = useState(null);
 
-    this.state = { 
-      resources: [] 
+  useEffect(() => {
+    const fetchPrismicData = async() => {
+      try {
+        // TODO to add loading state with spinner
+        const resources = await prismicGetter('resource');
+        if(resources) {
+          setPrismicData({ resources: resources.results });
+        }
+      } catch(e) {
+        console.error('e: ', e);
+      }
     };
-  }
-  componentDidMount() {
-    getResources()
-      .then(response => {
-        console.log('response', response.results)
-        const resources = response.results.map(item => item);
-        this.setState({ resources });
-      })
-      .catch(error => { 
-        console.error(error);
-      });
-  
-  }
-  render() {
-    const resources = this.state.resources 
-      .sort(
-        (first, second) =>
-          new Date(first.datePublished).getTime() <
-          new Date(second.datePublished).getTime()
-      )
-      .map((resource, i)=> {
-        return <li key={i} ><Resource resource={resource}/></li>;
-      });
-    return (
-      <ul>
-        {resources}
-      </ul>
-    );
-  }
-}
+    fetchPrismicData();
+  }, []);
 
-export default ResourceList;
+  if(prismicData) {
+    const resources = prismicData.resources;
+    return resources.map((resource) => <Resource key={resource.id} resource={resource}/>); 
+  }
+
+  return null;
+};
+
+export default Resources;
