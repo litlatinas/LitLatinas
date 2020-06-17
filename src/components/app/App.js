@@ -1,11 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import Header from '../header/Header';
 import Footer from '../Footer/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Podcasts from '../Podcasts/PodcastList';
-// import Podcast from '../Podcasts/Podcast';
-import ResourceList from '../Resources/Resources';
-import TryResources from '../Resources/tryResources';
+import Resources from '../resources/resources';
 import PodcastDetail from '../Podcasts/PodcastDetail';
 
 
@@ -16,9 +15,7 @@ export default function App() {
     <Header />
       <Switch>
         <Route exact path='/' component={Podcasts} />
-        {/* <Route path='/team' component={Team}> */}
-        {/* <Route path='/resources' component={ResourceList} /> */}
-        <Route path='/resources' component={TryResources} />
+        <Route path='/resources' component={Resources} />
         <Route path='/podcasts/:slug' component={PodcastDetail} /> 
       </Switch>
       <Footer />
