@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
+
 import { getPodcasts } from '../../services/contentfulApi';
-import styles from './AllPodcasts.css';
-import Podcast from './Podcast';
+import Podcast from './podcast';
+import styles from './allPodcasts.css';
 
 class PodcastsList extends Component {
   constructor(props){

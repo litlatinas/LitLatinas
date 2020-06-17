@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './Podcasts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
+import styles from './Podcasts.css';
 
 export default function AllPodcasts() {
   return (

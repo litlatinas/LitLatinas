@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { getPodcastBySlug } from '../../services/contentfulApi';
 import ReactPlayer from 'react-player';
+
+import { getPodcastBySlug } from '../../services/contentfulApi';
 // import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
-import styles from './PodcastDetail.css';
+import styles from './podcastDetail.css';
 
 class Detail extends Component {
   constructor(props) {

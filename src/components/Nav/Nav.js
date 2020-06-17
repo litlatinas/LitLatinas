@@ -1,6 +1,7 @@
 import React from 'react';
-import style from './Nav.css';
 import { Link } from 'react-router-dom';
+
+import style from './Nav.css';
 
 export default function Nav() {
   return (

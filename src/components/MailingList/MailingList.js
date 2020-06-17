@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import styles from './MailingList.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import styles from './mailingList.css';
 
 library.add(faEnvelope);
+
+//TODO add validation
 
 const Form = ({ status, message, onValidated }) => {
   let email, name;

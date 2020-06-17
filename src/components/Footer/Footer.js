@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Footer.css';
-import MailingList from '../MailingList/MailingList';
-import Nav from '../Nav/Nav';
-import Credits from '../credits/Credits';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import MailingList from '../mailingList/mailingList';
+import Credits from '../credits/credits';
+import Nav from '../nav/nav';
+import styles from './footer.css';
 
 export default function Footer() {
   return (

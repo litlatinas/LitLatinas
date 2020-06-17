@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Resource.css';
+
+import styles from './resource.css';
 
 const  Resource = ({ resource }) => {
   return (

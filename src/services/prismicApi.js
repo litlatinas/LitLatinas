@@ -1,4 +1,3 @@
-	
 import Prismic from 'prismic-javascript';
 
 import { prismicApiUrl } from '../utils/constants';

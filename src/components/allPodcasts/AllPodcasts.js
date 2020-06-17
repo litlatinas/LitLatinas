@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AllPodcasts.css';
+import styles from './allPodcasts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 

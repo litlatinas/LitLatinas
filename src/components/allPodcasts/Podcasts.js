@@ -75,7 +75,7 @@
 import React, { Component } from 'react';
 
 import { getPodcasts, getPodcastBySlug } from '../../services/contentfulApi';
-import PostListItem from '../Podcasts/Podcast';
+import PostListItem from '../podcasts/podcast';
 
 class Podcasts extends Component {
   constructor(props) {

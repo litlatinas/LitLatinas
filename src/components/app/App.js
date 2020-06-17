@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from '../header/Header';
-import Footer from '../Footer/Footer';
-import Podcasts from '../Podcasts/PodcastList';
+import Header from '../header/header';
+import Footer from '../footer/footer';
+import Podcasts from '../podcasts/podcastList';
 import Resources from '../resources/resources';
-import Books from '../books/books'
-import PodcastDetail from '../Podcasts/PodcastDetail';
+import Books from '../books/books';
+import PodcastDetail from '../podcasts/podcastDetail';
 
 
 export default function App() {
