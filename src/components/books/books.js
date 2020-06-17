@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { prismicGetter } from '../../services/prismicApi';
-import Resource from './resource';
 
-const Resources = () => {
+import { prismicGetter } from '../../services/prismicApi';
+import Book from './book';
+
+const Books = () => {
   const [prismicData, setPrismicData] = useState(null);
 
   useEffect(() => {
     const fetchPrismicData = async() => {
       try {
         // TODO to add loading state with spinner
-        const resources = await prismicGetter('resource');
-        if(resources) {
-          setPrismicData({ resources: resources.results });
+        const books = await prismicGetter('book');
+        if(books) {
+          setPrismicData({ books: books.results });
         }
       } catch(e) {
         console.error('e: ', e);
@@ -21,11 +22,11 @@ const Resources = () => {
   }, []);
 
   if(prismicData) {
-    const resources = prismicData.resources;
-    return resources.map((resource) => <Resource key={resource.id} resource={resource}/>); 
+    const books = prismicData.books;
+    return books.map((book) => <Book key={book.id} book={book}/>); 
   }
 
   return null;
 };
 
-export default Resources;
+export default Books;
