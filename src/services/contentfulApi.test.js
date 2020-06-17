@@ -1,6 +1,5 @@
 const { getPodcasts, getResources } = require('./contentfulApi');
 
-
 jest.mock('./contentfulApi');
 
 describe('contentfulApi wireup', () => {

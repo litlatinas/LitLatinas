@@ -52,12 +52,12 @@ class Detail extends Component {
         <image src={image} alt='podcast art'/>
         <p>{body}</p>
         <div className={styles.div}>
-        <ReactPlayer 
-          className={styles.reactPlayer }
-          url={podcast}
-          light= {true }
-        />
-        {/* <ResponsivePlayer /> */}
+          <ReactPlayer 
+            className={styles.reactPlayer }
+            url={podcast}
+            light= {true }
+          />
+          {/* <ResponsivePlayer /> */}
         </div>
         <h3>TAGS:</h3>
         <ul>
