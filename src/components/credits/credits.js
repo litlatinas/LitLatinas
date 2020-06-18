@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Credits.css';
 
+import styles from './credits.css';
 
 export default function Credits() {
   return (

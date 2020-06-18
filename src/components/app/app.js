@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from '../header/Header';
-import Footer from '../Footer/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Podcasts from '../Podcasts/PodcastList';
-// import Podcast from '../Podcasts/Podcast';
-import Resources from '../Resources/Resources';
-import PodcastDetail from '../Podcasts/PodcastDetail';
 
-
+import Header from '../header/header';
+import Footer from '../footer/footer';
+import Podcasts from '../podcasts/podcastList';
+import Resources from '../resources/resources';
+import PodcastDetail from '../podcasts/podcastDetail';
+import Books from '../books/books';
 
 export default function App() {
   return (
@@ -16,8 +15,8 @@ export default function App() {
     <Header />
       <Switch>
         <Route exact path='/' component={Podcasts} />
-        {/* <Route path='/team' component={Team}> */}
         <Route path='/resources' component={Resources} />
+        <Route path='/library' component={Books} />
         <Route path='/podcasts/:slug' component={PodcastDetail} /> 
       </Switch>
       <Footer />
@@ -25,6 +24,3 @@ export default function App() {
     </Router>
   );
 }
-
-
-

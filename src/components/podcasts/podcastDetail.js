@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { getPodcastBySlug } from '../../services/contentfulApi';
 import ReactPlayer from 'react-player';
+
+import { getPodcastBySlug } from '../../services/contentfulApi';
 // import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
-import styles from './PodcastDetail.css';
+import styles from './podcastDetail.css';
 
 class Detail extends Component {
   constructor(props) {
@@ -52,12 +53,12 @@ class Detail extends Component {
         <image src={image} alt='podcast art'/>
         <p>{body}</p>
         <div className={styles.div}>
-        <ReactPlayer 
-          className={styles.reactPlayer }
-          url={podcast}
-          light= {true }
-        />
-        {/* <ResponsivePlayer /> */}
+          <ReactPlayer 
+            className={styles.reactPlayer }
+            url={podcast}
+            light= {true }
+          />
+          {/* <ResponsivePlayer /> */}
         </div>
         <h3>TAGS:</h3>
         <ul>

@@ -1,13 +1,12 @@
 import React from 'react';
-import styles from './Podcasts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
+import styles from './allPodcasts.css';
 
 export default function AllPodcasts() {
   return (
     <section id='podcasts'>
-      <ul className={styles.episodeList}>
+      <ul className={styles.podcastList}>
         <li>
           <article className={styles.article}>
             <div className={styles.articleCover}>
