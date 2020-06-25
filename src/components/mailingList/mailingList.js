@@ -20,21 +20,7 @@ const Form = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div className={styles.mailingList}>
-      {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
-      {status === 'error' && (
-        <div
-          style={{ color: 'red' }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      {status === 'success' && (
-        <div
-          style={{ color: 'green' }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-
+    <div className={styles.mcSignup}>
       <FontAwesomeIcon className={styles.envelope} icon="envelope" size="7x" />
       <div className={styles.mailingListForm}>
         <input type="email" placeholder="email" ref={node => (email = node)} />
@@ -42,8 +28,23 @@ const Form = ({ status, message, onValidated }) => {
         <button onClick={submit}>
           JOIN OUR MAILING LIST
         </button>
+        <div className={styles.mailingList}>
+          {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
+          {status === 'error' && (
+            <div className={styles.mcResponse}
+              style={{ color: 'red' }}
+              dangerouslySetInnerHTML={{ __html: message }}
+            />
+          )}
+          {status === 'success' && (
+            <div className={styles.mcResponse}
+              style={{ color: 'green' }}
+              dangerouslySetInnerHTML={{ __html: message }}
+            />
+          )}
+        </div >
       </div>
-    </div >
+    </div>
   );
 };
 
