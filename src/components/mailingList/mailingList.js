@@ -3,14 +3,15 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-
 import styles from './mailingList.css';
+
 
 library.add(faEnvelope);
 
 const Form = ({ status, message, onValidated }) => {
   let email, name;
-  const submit = () =>
+  
+  const submit = (e) => {
     email &&
     name &&
     email.value.indexOf('@') > -1 &&
@@ -18,6 +19,10 @@ const Form = ({ status, message, onValidated }) => {
       EMAIL: email.value,
       NAME: name.value
     });
+    e.preventDefault();
+  };
+    
+  
 
   return (
     <div className={styles.mcSignup}>
@@ -42,6 +47,7 @@ const Form = ({ status, message, onValidated }) => {
               dangerouslySetInnerHTML={{ __html: message }}
             />
           )}
+          
         </div >
       </div>
     </div>
