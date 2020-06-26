@@ -63,6 +63,7 @@
 }
 .mcResponse {
   display:block;
+  text-align:left;
 
 }
 ::-webkit-input-placeholder {

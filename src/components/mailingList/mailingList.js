@@ -35,19 +35,14 @@ const Form = ({ status, message, onValidated }) => {
         </button>
         <div className={styles.mailingList}>
           {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
-          {status === 'error' && (
+          {status === 'error' && 
             <div className={styles.mcResponse}
               style={{ color: 'red' }}
-              dangerouslySetInnerHTML={{ __html: message }}
-            />
-          )}
-          {status === 'success' && (
+            >OOPS ! SOMETHING WENT WRONG, TRY AGAIN ?</div>}
+          {status === 'success' && 
             <div className={styles.mcResponse}
               style={{ color: 'green' }}
-              dangerouslySetInnerHTML={{ __html: message }}
-            />
-          )}
-          
+            >SUBSCRIBED! </div>}
         </div >
       </div>
     </div>
