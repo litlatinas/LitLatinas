@@ -38,6 +38,7 @@
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
+    "prismic-dom": "^2.2.3",
     "prismic-javascript": "^3.0.0",
     "promise-middleware-redux": "^1.0.5",
     "react": "^16.8.2",
