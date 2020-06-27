@@ -24,6 +24,17 @@ const Client = Prismic.client(prismicApiUrl);
 
 // export const client = Prismic.client(apiEndpoint, { accessToken });
 
+export const getPodcasts = async(title) => {
+  return Client.query(
+    Prismic.Predicates.at('document.type', title)
+  );
+}
+
+export const getPodcastBySlug = async(slug) => {
+  return Client.query(
+    Prismic.Predicates.at('document.type', slug)
+  );
+}
 
 
 export const prismicGetter = async(type) => {
