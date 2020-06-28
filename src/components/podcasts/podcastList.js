@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RSSParser from 'rss-parser';
 import Podcast from './podcast';
-import styles from './allPodcasts.css';
+import styles from './podcastList.css';
 
 const PodcastList = () => {
   const [feed, setFeed] = useState({ 
@@ -28,7 +28,9 @@ const PodcastList = () => {
   return (
     <>
       <section id="podcasts">
-        {rssPodcasts}
+        <ul className={styles.podcastList}>
+          {rssPodcasts}
+        </ul>
       </section>
     </>
   );

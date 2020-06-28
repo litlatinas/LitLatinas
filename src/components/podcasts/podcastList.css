@@ -1,0 +1,11 @@
+
+.podcastList {
+list-style-type: none;
+display: grid;
+align-items: initial;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+grid-gap: 1em;
+margin: 1em;
+padding: .5em;
+text-align: -webkit-match-parent;
+}
