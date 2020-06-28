@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import style from './nav.css';
 
@@ -8,10 +7,11 @@ export default function Nav() {
     <>
       <nav className={style.nav}>
         <ul>
-          <li><Link to='/'>PODCASTS</Link></li>
-          <li><Link to='/resources'>RESOURCES</Link></li>
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#podcasts">PODCASTS</a></li>
+          <li><a href="#resources">RESOURCES</a></li>
+          <li><a href="#books">BOOKS</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </>

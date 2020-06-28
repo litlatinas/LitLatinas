@@ -21,10 +21,17 @@ const Resources = () => {
   }, []);
 
   if(prismicData) {
-    const resources = prismicData.resources;
-    return resources.map((resource) => <Resource key={resource.id} resource={resource}/>); 
+    const prismicResources = prismicData.resources;
+    const resources = prismicResources.map((resource, i) => <li key={i}><Resource key={resource.id} resource={resource}/></li>); 
+    return (
+      <section id="resources">
+        <ul>
+          {resources}
+        </ul>
+      </section>
+  
+    );
   }
-
   return null;
 };
 

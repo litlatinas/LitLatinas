@@ -14,15 +14,10 @@ function Podcast({ podcast }) {
   return (
     <article className={styles.article}>
       <h3 className={styles.episodeTitle}></h3>
-      <Link to={`/podcasts/${podcast.slug}`}>
-        <h3>{podcast.title}</h3>
-      </Link>
+      <h3>{podcast.title}</h3>
       <div className={styles.articleCover}>
-        <Link to={`/podcasts/${podcast.slug}`}>
-          <img className={styles.episodeImage} src={podcast.image} alt="podcast-art" />
-        </Link>
+        <img className={styles.episodeImage} src={podcast.image} alt="podcast-art" />
         <button className={styles.playButton}
-        //  onClick={podcast.podcast}
         >
           <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button>
       </div>

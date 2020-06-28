@@ -5,7 +5,7 @@ import styles from './team.css';
 
 export default function Team() {
   return (
-    <section id='team-bios'>
+    <section id='team'>
       <ul className={styles.teamList}>
         <li>
           <article className={styles.article}>
@@ -29,7 +29,7 @@ export default function Team() {
         </li>
         <li>
           <article className={styles.article}>
-            <div cclassName={styles.teamBio}>
+            <div className={styles.teamBio}>
               <img className={styles.authorPic} src="https://www.mediamoves.com/wp-content/uploads/2014/08/Eva_Rodriguez1.jpg" />
             </div>  
             <span><h3 className={styles.teamName}>Name</h3></span>
@@ -41,4 +41,3 @@ export default function Team() {
     </section>
   );
 }
-
