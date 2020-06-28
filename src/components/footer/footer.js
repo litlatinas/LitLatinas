@@ -11,6 +11,10 @@ export default function Footer() {
       <Nav />
       <footer className={styles.footer}>
         <MailingList />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br> 
         <Credits />
       </footer>
     </>

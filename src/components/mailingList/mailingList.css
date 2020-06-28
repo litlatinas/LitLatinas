@@ -1,11 +1,18 @@
- 
+ .mcSignup{
+   display:flex;
+   margin: 0 auto;
+   width:35%;
+   
+ }
+
 .mailingList {
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
+  display:inline;
+  
 }
 .envelope {
+  display:inline-flex;
   color: #f0fb5c;
+  padding:.1em;
 }
 .mailingListForm {
   display:block;
@@ -53,6 +60,11 @@
 .mailingListForm button:hover {
   border: solid 3px #32e0ffef;
   color: #f0fb5c;
+}
+.mcResponse {
+  display:block;
+  text-align:left;
+
 }
 ::-webkit-input-placeholder {
   color:rgba(224, 110, 214, 0.7);
