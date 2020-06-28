@@ -99,7 +99,6 @@ class Podcasts extends Component {
   
   }
   
-
   render() {
     const postNodes = this.state.podcasts
       .sort(

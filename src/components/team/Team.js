@@ -36,7 +36,6 @@ export default function Team() {
             <p className={styles.bioDescription}>This is just your average description that explains alot</p>
           </article>
         </li>
-       
       </ul>
     </section>
   );

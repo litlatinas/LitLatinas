@@ -8,8 +8,6 @@ import styles from './mailingList.css';
 
 library.add(faEnvelope);
 
-//TODO add validation
-
 const Form = ({ status, message, onValidated }) => {
   let email, name;
   const submit = () =>
@@ -70,5 +68,3 @@ class MailingList extends Component {
 }
 
 export default MailingList;
-
-

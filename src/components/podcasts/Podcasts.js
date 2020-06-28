@@ -80,8 +80,5 @@ export default function AllPodcasts() {
         </li>
       </ul>
     </section>
-      
-      
-    
   );
 }

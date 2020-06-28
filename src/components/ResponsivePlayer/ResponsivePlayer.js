@@ -17,4 +17,5 @@ class ResponsivePlayer extends Component {
     );
   }
 }
+
 export default ResponsivePlayer;

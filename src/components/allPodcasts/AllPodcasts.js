@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './allPodcasts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
 export default function AllPodcasts() {
   return (
     <section id='podcasts'>
@@ -81,8 +79,6 @@ export default function AllPodcasts() {
         </li>
       </ul>
     </section>
-      
-      
     
   );
 }

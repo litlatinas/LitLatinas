@@ -6,9 +6,6 @@ export default function Contact() {
   return (
     <section id='contact' className={styles.contact}>
       <p>contact us for story ideas, themes, pitches</p>
-    </section>
-      
-      
-    
+    </section>   
   );
 }
