@@ -1,38 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
+// import RssFeed from './podcastList';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import moment from 'moment';
+// import moment from 'moment';
 
 import styles from './podcast.css';
 
 library.add(faPlayCircle);
 
-function Podcast({ podcast }) {
+function Podcast({ item }) {
   return (
-    <article className={styles.article}>
-      <h3 className={styles.episodeTitle}></h3>
-      <Link to={`/podcasts/${podcast.slug}`}>
-        <h3>{podcast.title}</h3>
-      </Link>
-      <div className={styles.articleCover}>
-        <Link to={`/podcasts/${podcast.slug}`}>
-          <img className={styles.episodeImage} src={podcast.image} alt="podcast-art" />
-        </Link>
-        <button className={styles.playButton}
-        //  onClick={podcast.podcast}
-        >
-          <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button>
-      </div>
-      <h4>{moment(podcast.datePublished).format('MMMM D, YYYY')}</h4>
-      <p>{podcast.description}</p>
-    </article>
+    <>
+      <li>{item?.title}</li>
+      <li><img src={item?.itunes?.image} width="25%"/></li>
+      <li>{item?.enclosure?.url}</li>
+      <li>{item?.itunes?.duration}</li>
+      <li>{item?.pubDate}</li>
+      <li>{item?.contentSnippet}</li>
+      </>
   );
 }
 Podcast.propTypes = {
-  podcast: PropTypes.object
+  item: PropTypes.object
 };
 
 export default Podcast;
