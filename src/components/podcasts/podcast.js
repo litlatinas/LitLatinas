@@ -15,7 +15,7 @@ function Podcast({ podcast }) {
     <article className={styles.article}>
       <h3 className={styles.episodeTitle}></h3>
       <h3>{podcast.title}</h3>
-\      <div className={styles.articleCover}>
+      <div className={styles.articleCover}>
         <img className={styles.episodeImage} src={podcast.image} alt="podcast-art" />
         <button className={styles.playButton}
         >

@@ -10,7 +10,7 @@ export default function Nav() {
           <li><a href="#podcasts">PODCASTS</a></li>
           <li><a href="#resources">RESOURCES</a></li>
           <li><a href="#books">BOOKS</a></li>
-          <li><a href="#team-bios">TEAM</a></li>
+          <li><a href="#team">TEAM</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>

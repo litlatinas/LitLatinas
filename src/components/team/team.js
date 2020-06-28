@@ -5,7 +5,7 @@ import styles from './team.css';
 
 export default function Team() {
   return (
-    <section id='team-bios'>
+    <section id='team'>
       <ul className={styles.teamList}>
         <li>
           <article className={styles.article}>
