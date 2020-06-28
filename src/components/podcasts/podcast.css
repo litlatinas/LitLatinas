@@ -24,6 +24,18 @@
     opacity: 0.5;
     cursor:pointer;
   }
+  .episodeTitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 1em;
+   }
+   .episodeDate{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 1em; 
+   }
+   .episodeDescription{
+     margin:.25em;
+     padding:.25em;
+   }
   .podcastList {
   list-style-type: none;
   display: grid;

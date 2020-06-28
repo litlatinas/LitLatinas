@@ -1,11 +1,9 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
-// import RssFeed from './podcastList';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-// import moment from 'moment';
+import moment from 'moment';
 
 import styles from './podcast.css';
 
@@ -13,14 +11,19 @@ library.add(faPlayCircle);
 
 function Podcast({ item }) {
   return (
-    <>
-      <li>{item?.title}</li>
-      <li><img src={item?.itunes?.image} width="25%"/></li>
-      <li>{item?.enclosure?.url}</li>
-      <li>{item?.itunes?.duration}</li>
-      <li>{item?.pubDate}</li>
-      <li>{item?.contentSnippet}</li>
-      </>
+    <article className={styles.article}>
+      <h3 className={styles.episodeTitle}>{item?.title}</h3>
+      <div className={styles.articleCover}>
+        <img className={styles.episodeImage} src={item?.itunes?.image} width="25%" alt="podcast-art"/>
+        <button className={styles.playButton}
+        //  onClick={podcast.podcast}
+        >
+          <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button><li>{item?.enclosure?.url}</li>
+        <h4>{item?.itunes?.duration}</h4>
+        <h4>{moment(item?.pubDate).format('MMMM D, YYYY')}</h4>
+        <p>{item?.contentSnippet}</p>
+      </div>
+    </article>
   );
 }
 Podcast.propTypes = {

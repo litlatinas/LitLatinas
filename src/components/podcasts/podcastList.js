@@ -23,7 +23,7 @@ const PodcastList = () => {
     rssData();
   }, []);
 
-  const rssPodcasts = feed.items.map((item, i) => <li key={i}> <Podcast item={item} /></li>);
+  const rssPodcasts = feed.items.map((item, i) => <div key={i}> <Podcast item={item} /></div>);
   
   return (
     <>
