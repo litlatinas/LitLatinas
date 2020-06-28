@@ -22,8 +22,15 @@ const Books = () => {
   }, []);
 
   if(prismicData) {
-    const books = prismicData.books;
-    return books.map((book) => <Book key={book.id} book={book}/>); 
+    const prismicBooks = prismicData.books;
+    const books = prismicBooks.map((book, i) => <li key={i}><Book key={book.id} book={book}/></li>);
+    return (
+      <section id="books">
+        <ul>
+          {books}
+        </ul>
+      </section>
+    );
   }
 
   return null;
