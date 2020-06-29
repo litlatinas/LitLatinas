@@ -11,6 +11,7 @@ const ResponsivePlayer = () =>  {
         url="https://feeds.soundcloud.com/stream/692140882-user-766878646-challenging-the-academy-research-poetry-w-shannon-kearns.m4a"
         width='100%'
         height='100%'
+        controls={true}
       />
     </div>  
   );
