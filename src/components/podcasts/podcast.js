@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
+import ResponsivePlayer from '../responsivePlayer/responsivePlayer';
 
 import styles from './podcast.css';
 
@@ -16,7 +17,7 @@ function Podcast({ item }) {
       <div className={styles.articleCover}>
         <img className={styles.episodeImage} src={item?.itunes?.image} alt="podcast-art"/>
         <button className={styles.playButton}
-          // onClick=<li></div>{item?.enclosure?.url}</li>
+          onClick= {ResponsivePlayer}
         >
           <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button>
       </div>
