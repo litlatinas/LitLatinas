@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
-import styles from './responsivePlayer.css';
+import React from 'react';
 import ReactPlayer from 'react-player';
+import styles from './responsivePlayer.css';
 
 
-class ResponsivePlayer extends Component {
-  render() {
-    return (
-      <div className={styles.playerContents}>
-        <ReactPlayer
-          className={styles.reactPlayer}
-          url={podcast}
-          width='100%'
-          height='100%'
-        />
-      </div>  
-    );
-  }
-}
+const ResponsivePlayer = () =>  {
+  return (
+    <div className={styles.playerContents}>
+      <ReactPlayer
+        className={styles.reactPlayer}
+        url="https://feeds.soundcloud.com/stream/692140882-user-766878646-challenging-the-academy-research-poetry-w-shannon-kearns.m4a"
+        width='100%'
+        height='100%'
+      />
+    </div>  
+  );
+  
+};
 export default ResponsivePlayer;
