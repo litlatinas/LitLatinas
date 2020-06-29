@@ -14,15 +14,15 @@ function Podcast({ item }) {
     <article className={styles.article}>
       <h3 className={styles.episodeTitle}>{item?.title}</h3>
       <div className={styles.articleCover}>
-        <img className={styles.episodeImage} src={item?.itunes?.image} width="25%" alt="podcast-art"/>
+        <img className={styles.episodeImage} src={item?.itunes?.image} alt="podcast-art"/>
         <button className={styles.playButton}
-        //  onClick={podcast.podcast}
+          // onClick=<li></div>{item?.enclosure?.url}</li>
         >
-          <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button><li>{item?.enclosure?.url}</li>
-        <h4>{item?.itunes?.duration}</h4>
-        <h4>{moment(item?.pubDate).format('MMMM D, YYYY')}</h4>
-        <p>{item?.contentSnippet}</p>
+          <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button>
       </div>
+      <h4>{item?.itunes?.duration}</h4>
+      <h4>{moment(item?.pubDate).format('MMMM D, YYYY')}</h4>
+      <p>{item?.contentSnippet}</p>
     </article>
   );
 }
