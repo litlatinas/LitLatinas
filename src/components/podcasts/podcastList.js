@@ -28,6 +28,7 @@ const PodcastList = () => {
   return (
     <>
       <section id="podcasts">
+        <h4>EPISODES:</h4>
         <ul className={styles.podcastList}>
           {rssPodcasts}
         </ul>
