@@ -1,6 +1,5 @@
 @media (max-width: 375px) {
 .header{
-  border:solid 3px blue;
   box-sizing: border-box;
   margin:0 auto;
   width: 100%;
@@ -8,6 +7,7 @@
 }
 .header h2 {
   margin:0;
+  padding:0em 0em 1em;
   min-width: 0;
   /* font-family: 'Faster One', cursive;*/
   /* font-family: 'Monofett', cursive;  */
@@ -18,7 +18,7 @@
   font-style: oblique;  
   font-size: 3em;
   color: #e68002;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 0 #FF290d;
   letter-spacing: .33em;
@@ -27,14 +27,15 @@
 .header h3 {
   font-family: 'Lato', sans-serif; 
   color:#ffffff;
-  text-align: right;
+  text-align: center;
   letter-spacing: .25em;
 }
 .header h4 {
-  margin:10px;
+  margin:3em;
   font-family: 'Lato', sans-serif; 
+  font-size: 1em;
   color:#ffffff;
-  text-align: right;
+  text-align: center;
   letter-spacing: .25em;
 }
 .header nav {
@@ -62,9 +63,9 @@
   width: 50%;
   height:50%;
   background: #ffffff3a;
-  border: solid #f0fb5c 3px;
+  border: solid #ffdf00 3px;
   font-family: 'Roboto', sans-serif; 
-  color: #32e0ff;
+  color: #ff290d;
   text-align: center;
   text-decoration: none;
   font-size: 1.75em;
@@ -72,8 +73,8 @@
   transition: all .2s ease-in-out; 
 }
 .header button:hover {
-  border: solid 3px #32e0ffef;
-  color: #f0fb5c;
+  border: solid 3px #ff290d;
+  color: #ffdf00;
 };
 }
 
