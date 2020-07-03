@@ -7,14 +7,20 @@ import moment from 'moment';
 import ResponsivePlayer from '../responsivePlayer/responsivePlayer';
 import styles from './podcast.css';
 
+
 library.add(faPlayCircle);
 
 function Podcast({ item }) {
 
-  const [url, setUrl] = useState(item?.enclosure.url);
-  const payload = () => {
-    setUrl(//should hoist a new url but how do i pass to responsivePlayer component//
-    );
+  // const [url, setUrl] = useState(item?.enclosure.url);
+  // const payload = () => {
+  //   setUrl(//should hoist a new url but how do i pass to responsivePlayer component//
+  //   );
+  // };
+  const handleClick = () => {
+    const { url } = item?.enclosure;
+    return <ResponsivePlayer url = {url} />
+
   };
 
   return (
@@ -23,7 +29,7 @@ function Podcast({ item }) {
       <div className={styles.articleCover}>
         <img className={styles.episodeImage} src={item?.itunes?.image} alt="podcast-art"/>
         <button className={styles.playButton}
-          onClick= {payload} url={url}
+          onClick= {handleClick}
         >
           <FontAwesomeIcon className={styles.playCircle} icon="play-circle" /> LISTEN</button>
       </div>

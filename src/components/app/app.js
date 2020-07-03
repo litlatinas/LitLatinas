@@ -7,7 +7,6 @@ import Podcasts from '../podcasts/podcastList';
 import Resources from '../resources/resources';
 import PodcastDetail from '../podcasts/podcastDetail';
 import Books from '../books/books';
-import ResponsivePlayer from '../responsivePlayer/responsivePlayer';
 
 export default function App() {
   return (
@@ -19,8 +18,7 @@ export default function App() {
         <Route path='/resources' component={Resources} />
         <Route path='/library' component={Books} />
         <Route path='/podcasts/:slug' component={PodcastDetail} /> 
-      </Switch>
-      <ResponsivePlayer />  
+      </Switch> 
       <Footer />
       </>
     </Router>
