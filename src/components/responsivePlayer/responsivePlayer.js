@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import styles from './responsivePlayer.css';
 
 
-const ResponsivePlayer = ({ url }) =>  {
+const ResponsivePlayer = ({ url }) => {
+  console.log('url: ', url);
   return (
     <div className={styles.playerContents}>
       <ReactPlayer
